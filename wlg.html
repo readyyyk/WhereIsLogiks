@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+      <meta charset="UTF-8">
+      <title>Where !s logics?</title>
+      <link rel="stylesheet" href="libs/reset.css">
+      <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+      <header class="header">
+            <div class="container">
+                  <div class="header__inner">
+
+                        <div class="nav">
+                              <div class="nav__link"><a href="index.html">Main</a></div>
+                        </div>
+
+                        <div class="nav">
+                              <div class="nav__link" onclick="if (localStorage.t == 0 || localStorage.t == undefined) {localStorage.t = 1;}"><a href="FAQ.html">FAQ</a></div>
+                        </div>
+
+                        <div class="nav">
+                              <div class="nav__link" onclick="if (localStorage.t == 1) {localStorage.t = 2;}"><a href="aboutproject.html" id="nav__link">About Project</a></div>
+                        </div>
+
+                  </div>
+            </div>
+      </header>
+
+      <main>
+            <!-- title -->
+            <div class="main--title" id="main-title">
+                  *Тут надо написать название раунда* 1/5
+            </div>
+
+            <div class="main--content">
+                  <div class="flex">
+
+                        <div class="flex--el">
+
+                              <div class="img--box">
+                                    <img src="img/r1.img1.png" alt="r1.img1.jpg" class="el--img" id="img1">
+                              </div>
+
+                        </div>
+
+                        <div class="flex--el">
+                              <img src="img/plus.png" alt="plus.png" style="position: relative;top: 10px">
+                        </div>
+
+                        <div class="flex--el">
+                              <img src="img/r1.img2.png" alt="r1.img2.jpg" class="el--img" id="img2">
+                        </div>
+
+                        <div class="flex--el all-w">
+                              <div class="img--box">
+                                    <img src="img/ravno.png" alt="ravno.png">
+                              </div>
+                        </div>
+
+                        <div class="flex--el">
+                              <img src="img/r1.var1.jpg" alt="r1.var1.jpg" class="el--img" id="var1" onclick="cheker(1)">
+                        </div>
+
+                        <div class="flex--el">
+                              <img src="img/r1.var2.jpg" alt="r1.var1.jpg" class="el--img" id="var2" onclick="cheker(2)">
+                        </div>
+
+                        <div class="flex--el">
+                              <img src="img/r1.var3.jpg" alt="r1.var1.jpg" class="el--img" id="var3" onclick="cheker(3)">
+                        </div>
+
+                  </div>
+
+                  <div class="input">
+
+                        <form class="form">
+                              <input type="text" class="form--input" placeholder="Answer:">
+                        </form>
+
+                        <div class="button--label">
+
+                              <button class="btn btn--circle">
+                                    <img src="img/gal.png" alt="gal.png" class="label--img">
+                              </button>
+
+                        </div>
+                  </div>
+            </div>
+      </main>
+
+      <script src="script.js"></script>
+</body>
+
+</html>
