@@ -10,7 +10,29 @@
 body {
   font-family: Montserrat;
   box-sizing: border-box;
-  background: #ff1b1b;
+  background: rgba(255, 120, 63, 0.62);
+}
+.green--body {
+  background: rgba(108, 193, 0, 0.31);
+}
+.green--line {
+  height: 0px;
+  position: relative;
+  border: 20px solid #5B9E06;
+  left: -35px;
+  border-radius: 10px;
+}
+.green--line1 {
+  width: 178.19px;
+  top: 180px;
+  left: -46px;
+  transform: rotate(45deg);
+}
+.green--line2 {
+  width: 318px;
+  top: 90px;
+  left: 32px;
+  transform: rotate(-45deg);
 }
 a {
   text-decoration: none;
@@ -36,8 +58,8 @@ a {
   display: flex;
   justify-content: center;
   width: 100%;
-  margin-top: 35px;
-  margin-bottom: 35px;
+  margin-top: 60px;
+  margin-bottom: 60px;
 }
 .conteiner {
   width: 275px;
@@ -84,7 +106,7 @@ a {
   color: #810000;
 }
 .link-r:hover {
-  color: #ff1b1b;
+  color: #ff4e4e;
 }
 .link-g {
   color: #287C00;
