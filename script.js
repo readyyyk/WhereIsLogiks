@@ -28,15 +28,15 @@ function cheker(variant) {
       }
 
       mt.textContent = "Сложение " + round + "/5";
-      img1.src = "img/r" + round + "/img1.png";
-      img2.src = "img/r" + round + "/img2.png";
+      img1.src = "img/r" + round + "/img1.jpg";
+      img2.src = "img/r" + round + "/img2.jpg";
 
       v1.src = "img/r" + round + "/var1.jpg";
       v2.src = "img/r" + round + "/var2.jpg";
       v3.src = "img/r" + round + "/var3.jpg";
 
-      img1.alt = "img/r" + round + "/img1.png";
-      img2.alt = "img/r" + round + "/img2.png";
+      img1.alt = "img/r" + round + "/img1.jpg";
+      img2.alt = "img/r" + round + "/img2.jpg";
 
       v1.alt = "img/r" + round + "/var1.jpg";
       v2.alt = "img/r" + round + "/var2.jpg";

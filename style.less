@@ -8,15 +8,14 @@
       src: url(fonts/montserrat.ttf);
 }
 
-body {
-      font-family: Montserrat;
+@media (max-width:1066px) {
+      .flex--el {
+            margin-top: 30px;
+      }
 }
 
-.img--div {
-      width: 350px;
-      height: 350px;
-      display: flex;
-
+body {
+      font-family: Montserrat;
 }
 
 .main {
@@ -51,20 +50,13 @@ body {
             display: flex;
             justify-content: center;
             align-items: center;
-
+            overflow: hidden;
       }
 }
 
+/*1066*/
 .all-w {
       width: 100%;
-}
-
-.img--box {
-      width: 350px;
-      height: 100%;
-      display: flex;
-      justify-content: center;
-      align-items: center;
 }
 
 .input {
@@ -78,6 +70,7 @@ body {
 .form {
       margin-bottom: 400px;
       margin-right: 10px;
+
       &--label {
             position: relative;
             left: -100px;
@@ -110,9 +103,53 @@ body {
       border-right-width: 2px;
       margin-top: 1px;
 }
-.el--img{
-      box-sizing: border-box;
-      width: 75%;
+
+.img--box {
+      width: 350px;
+      height: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border: 5px solid #777;
+      transition: 0.1s all ease;
+      &:hover{
+            border-top: 40px solid #777;
+      }
+}
+
+.img--div {
+      width: 350px;
+      height: 350px;
+      display: flex;
+
+}
+
+.el--img {
+      max-width: 340px;
+      height: 305px;
       /*border: 1px solid #777;
       border-top: 20px solid #777777;*/
+}
+
+.footer{
+      height: 300px;
+      display: flex;
+      flex-wrap: nowrap;
+      justify-content: center;
+      align-items: center;
+}
+.round--btn{
+      width: 80px;height: 80px;
+      border: 6px solid #a1a1a1;
+      border-bottom: 10px solid #a1a1a1;
+      border-radius: 50%;
+      background-image: url(img/q.png);
+      background-size: 55px 55px;
+      background-repeat: no-repeat;
+      background-position: center;
+      transition: 0.1s all ease;
+      &:hover{
+            border: 6px solid #a1a1a1;
+            margin-top: 4px;
+      }
 }
