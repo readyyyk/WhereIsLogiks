@@ -1,9 +1,5 @@
 localStorage.clear();
-localStorage.answer1 = 0;
-localStorage.answer2 = 0;
-localStorage.answer3 = 0;
-localStorage.answer4 = 0;
-localStorage.answer5 = 0;
+
 var round = 1,
       score = 0;
 
@@ -19,17 +15,16 @@ var v2 = document.getElementById("var2");
 var v3 = document.getElementById("var3");
 
 function cheker(variant) {
+      if(variant == ra[round-1])
+            score++;
+
+
       round++;
 
       if (round > 5) {
+            alert(score);
             localStorage.res = score;
             document.location.replace('result.html');
-      }
-
-      console.log(variant, ra[round-2]);
-      if(variant == ra[round]){
-            score++;
-            console.log("score++");
       }
 
       mt.textContent = "Сложение " + round + "/5";
@@ -46,7 +41,4 @@ function cheker(variant) {
       v1.alt = "img/r" + round + "/var1.jpg";
       v2.alt = "img/r" + round + "/var2.jpg";
       v3.alt = "img/r" + round + "/var3.jpg";
-
-      console.log(score);
-
 }
